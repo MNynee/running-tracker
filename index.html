@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>Running Tracker</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./src/images/running2.png" alt="running" class="img-logo">
+    </div>
+
+    <form>
+        <label for="entry">Number of kilometers today</label>
+        <br>
+        <input type="number" id="entry" step="0.1" />
+        <br>
+        <button type="submit">Add</button>
+    </form>
+
+    <hr>
+
+    <section class="entriesWrapper">
+        <h3>Last 7 days</h3>
+        <ul id="entries">
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+        </ul>
+    </section>
+
+    <section class="data">
+        <div>
+            <p>Total</p>
+            <span id="total"></span>
+        </div>
+        <div>
+            <p>Average Distance</p>
+            <span id="average"></span>
+        </div>
+        <div>
+            <p>This week highest</p>
+            <span id="high"></span>
+        </div>
+    </section>
+
+    <section class="progress">
+        <h3>
+            Weekly target: <span id="progressTotal"></span> / <span id="target"></span> miles
+        </h3>
+        <div class="progressCircleWrapper">
+            <div id="progressCircle">
+                <div id="progressCenter"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

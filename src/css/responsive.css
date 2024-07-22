@@ -1,0 +1,13 @@
+@media screen and (min-width: 800px) {
+    body {
+        width: 60%;
+    }
+
+    input[type="number"] {
+        width: 40%;
+    }
+
+    .img-logo {
+        max-width: 50%;
+    }
+}
