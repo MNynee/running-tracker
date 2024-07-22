@@ -11,3 +11,9 @@
         max-width: 50%;
     }
 }
+
+@media (max-width: 600px) {
+    .img-logo{
+        max-width: 50%;
+    }
+}
